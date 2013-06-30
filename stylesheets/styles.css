@@ -134,8 +134,12 @@ header a:hover {
 
 .header-links {
   float: right;
-  word-spacing: 9px
 }
+
+.header-links a {
+  padding-left: 10px;
+}
+
 
 .header-links .icon-stackexchange {
   font-size: 18px;
