@@ -6,7 +6,7 @@ body {
   background-image: url("/images/cream_dust.png");
   color:#777;
   font-weight:300;
-  width: 760px;
+  width: 640px;
   margin: auto;
 }
 
@@ -101,8 +101,13 @@ header a {
   color: inherit;
 }
 
-header a:hover {
+header a:hover, header a.current {
   color:#39c;
+}
+
+.redirect {
+  unicode-bidi: bidi-override;
+  direction: rtl;
 }
 
 .header-name {
@@ -130,6 +135,10 @@ header a:hover {
   float: left;
   text-transform: uppercase;
   word-spacing: 3px;
+}
+
+.header-menu a {
+  margin-right: 16px;
 }
 
 .header-links {
