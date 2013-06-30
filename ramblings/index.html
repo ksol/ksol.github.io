@@ -1,0 +1,15 @@
+---
+layout: default
+title: "Ramblings"
+---
+<section>
+  {% for post in site.categories.ramblings %}
+    <h3 class="post-title">
+      <span class="rambling-title">{{ post.title }}</span>
+      <small class="post-date">{{ post.date | date_to_string }}</small>
+    </h3>
+    <article>
+      {{ post.content }}
+    </article>
+  {% endfor %}
+</section>

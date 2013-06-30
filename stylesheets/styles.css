@@ -159,6 +159,15 @@ header a:hover, header a.current {
   opacity: 0;
 }
 
+.post-date {
+  float: right;
+  line-height: 20px;
+}
+
+.post-link, .rambling-title, .full-post-title {
+  font-variant: small-caps;
+}
+
 header ul {
   list-style:none;
   height:40px;

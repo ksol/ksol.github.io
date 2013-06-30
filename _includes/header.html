@@ -18,6 +18,12 @@
     {% else %}
       <a href="/posts" />Posts</a>
     {% endif %}
+
+    {% if page.url == "/ramblings/index.html" %}
+      <a class="current" href="/ramblings" />Ramblings</a>
+    {% else %}
+      <a href="/ramblings" />Ramblings</a>
+    {% endif %}
   </section>
   <section class="header-links">
     <a title="GitHub: ksol" href="https://github.com/ksol"><i class="icon-github"></i></a>
