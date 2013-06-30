@@ -246,15 +246,6 @@ footer {
 }
 
 @media print, screen and (max-width: 960px) {
-
-  body {
-    width: 80%;
-  }
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-
   header, section, footer {
     float:none;
     position:static;
@@ -296,6 +287,12 @@ footer {
 
   pre, code {
     word-wrap:normal;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    width: 80%;
   }
 }
 
