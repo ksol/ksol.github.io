@@ -252,10 +252,6 @@ footer {
     width:auto;
   }
 
-  section {
-    padding:20px 0;
-    margin:0 0 20px;
-  }
 
   header a small {
     display:inline;
@@ -267,6 +263,15 @@ footer {
     top:52px;
   }
 }
+
+
+
+@media print, screen and (max-width: 740px) {
+  body {
+    width: 80%;
+  }
+}
+
 
 @media print, screen and (max-width: 720px) {
   body {
