@@ -17,7 +17,7 @@ title: "Home"
 </section>
 <hr />
 <section>
-  {% for post in site.posts %}
+  {% for post in site.posts reversed %}
     <h3 class="post-title">
       <a class="post-link" href="{{post.url}}">{{ post.title }}</a>
       {% if post.category == "ramblings" %}
@@ -26,7 +26,13 @@ title: "Home"
         </small>
       {% else %}
         <small class="post-date">
-          <a href="/posts">{{post.category | capitalize }}</a> &mdash; {{ post.date | date_to_string }}
+          <a href="/posts">
+            {% if post.category %}
+              {{post.category | capitalize }}
+            {% elsif post.categories %}
+              {{post.categories | array_to_sentence_string | capitalize }}
+            {% endif %}
+          </a> &mdash; {{ post.date | date_to_string }}
         </small>
       {% endif %}
     </h3>
