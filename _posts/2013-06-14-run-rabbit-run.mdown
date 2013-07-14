@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: Sport, Life
+categories: Sport Life
 title: Finding balance.
 ---
 Today, I realized (well, 'remember' would be more accurate) that most of the
