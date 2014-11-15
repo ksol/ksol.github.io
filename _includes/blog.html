@@ -1,0 +1,46 @@
+<section id="blog-section" class="container">
+  <div class="row">
+    {% if content.size > 0 %}
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <h2 class="post-title">
+          <a class="post-link" href="{{post.url}}">{{ page.pretty_title }}</a>
+        </h2>
+
+        <br>
+
+        <div class="content">
+          {{content}}
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <p class="post-date">
+          <em>&mdash; {{ page.date | date_to_string }}</em>
+        </p>
+      </div>
+    {% else %}
+      {% for post in site.posts reversed %}
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <h2 class="post-title">
+            <a class="post-link" href="{{post.url}}">{{ post.pretty_title }}</a>
+          </h2>
+
+          <br>
+
+          <div class="content">
+            {{post.excerpt}}
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <a href="{{post.url}}"><em>Read more</em></a>
+          <p class="post-date">
+            <em>&mdash; {{ post.date | date_to_string }}</em>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <hr />
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</section>

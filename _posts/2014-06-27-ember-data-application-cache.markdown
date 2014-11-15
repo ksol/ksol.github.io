@@ -1,7 +1,7 @@
 ---
-layout: post
-categories: Dev
-title: Ember.js, Ember Data, and the application cache are on an island.
+layout: blog
+title: Ember.js data appcache
+pretty_title: Ember.js, Ember Data, and the application cache are on an island
 ---
 It has been said numerous times in the past, [the application cache can occasionally be a douchebag](http://alistapart.com/article/application-cache-is-a-douchebag). Not that it is not doing its job, but the way the whole thing works is not really intuitive and hard to grasp at times.
 

@@ -77,21 +77,43 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: white;
-    background-image: url("img/background.jpg");
+}
+
+.main-header {
+    background-image: url("/img/background.jpg");
     background-size: cover;
 }
 
-header .container {
+.blog-header {
+    margin-top: 60px;
+    height: 260px;
+    background-image: url("/img/blog-header.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+@media(min-width:768px) {
+    .blog-header {
+        margin-top: 110px;
+    }
+}
+.blog-title {
+    margin-top: 140px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.main-header .container {
     padding-top: 100px;
     padding-bottom: 50px;
 }
 
-header img {
+.main-header img {
     display: block;
     margin: 0 auto 20px;
 }
 
-header .intro-text .name {
+.main-header .intro-text .name {
     display: block;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -99,22 +121,22 @@ header .intro-text .name {
     font-weight: 700;
 }
 
-header .intro-text .skills {
+.main-header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
 
 @media(min-width:768px) {
-    header .container {
+    .main-header .container {
         padding-top: 200px;
         padding-bottom: 100px;
     }
 
-    header .intro-text .name {
+    .main-header .intro-text .name {
         font-size: 4.75em;
     }
 
-    header .intro-text .skills {
+    .main-header .intro-text .skills {
         font-size: 1.75em;
     }
 }
@@ -449,5 +471,23 @@ footer .footer-below {
 }
 
 .about-content {
+    text-align: justify;
+}
+
+.post-date {
+  line-height: 20px;
+  float: right;
+}
+
+#blog-section a {
+    color: #{{ site.color.blog-link}};;
+}
+
+#blog-section a:hover {
+    color: #{{ site.color.blog-link-secondary}};
+    text-decoration: none;
+}
+
+#blog-section .content p {
     text-align: justify;
 }
