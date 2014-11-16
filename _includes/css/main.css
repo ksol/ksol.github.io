@@ -479,15 +479,15 @@ footer .footer-below {
   float: right;
 }
 
-#blog-section a {
+#content-section a {
     color: #{{ site.color.blog-link}};;
 }
 
-#blog-section a:hover {
+#content-section a:hover {
     color: #{{ site.color.blog-link-secondary}};
     text-decoration: none;
 }
 
-#blog-section .content p {
+#content-section .content p {
     text-align: justify;
 }

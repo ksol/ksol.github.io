@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
 
+  <body id="page-top" class="index">
+    {% if content.size > 0 %}
+      {% include portfolio-header.html %}
+      {% include portfolio-content.html %}
+    {% else %}
+      {% include header.html %}
+      {% include about.html %}
+      {% include portfolio_grid.html %}
+      {% include contact.html %}
+    {% endif %}
 
-    <body id="page-top" class="index">
-
-    {% include header.html %}
-    {% include about.html %}
-    {% include portfolio_grid.html %}
-    {% include contact.html %}
     {% include footer.html %}
-    {% include modals.html %}
     {% include js.html %}
-
-    </body>
+  </body>
 </html>

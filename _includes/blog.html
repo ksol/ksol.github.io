@@ -1,4 +1,4 @@
-<section id="blog-section" class="container">
+<section id="content-section" class="container">
   <div class="row">
     {% if content.size > 0 %}
       <div class="col-xs-12 col-md-8 col-md-offset-2">
@@ -20,26 +20,28 @@
       </div>
     {% else %}
       {% for post in site.posts reversed %}
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <h2 class="post-title">
-            <a class="post-link" href="{{post.url}}">{{ post.pretty_title }}</a>
-          </h2>
+        {% if post.category == 'blog' %}
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <h2 class="post-title">
+              <a class="post-link" href="{{post.url}}">{{ post.pretty_title }}</a>
+            </h2>
 
-          <br>
+            <br>
 
-          <div class="content">
-            {{post.excerpt}}
+            <div class="content">
+              {{post.excerpt}}
+            </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <a href="{{post.url}}"><em>Read more</em></a>
-          <p class="post-date">
-            <em>&mdash; {{ post.date | date_to_string }}</em>
-          </p>
-        </div>
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <hr />
-        </div>
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <a href="{{post.url}}"><em>Read more</em></a>
+            <p class="post-date">
+              <em>&mdash; {{ post.date | date_to_string }}</em>
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <hr />
+          </div>
+        {% endif %}
       {% endfor %}
     {% endif %}
   </div>
