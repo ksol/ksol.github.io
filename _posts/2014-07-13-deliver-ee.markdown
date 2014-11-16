@@ -1,7 +1,8 @@
 ---
 layout:        default
 date:          2014-07-15
-img:           submarine.png
+small-img:     deliver.ee.png
+img:           deliver.ee.png
 alt:           deliver.ee
 pretty_title:  deliver.ee apps
 project-date:  Since September 2014
