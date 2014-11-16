@@ -12,7 +12,7 @@ contact:       Sébastien Poudat
 contact_email: contact@deliver.ee
 category:      portfolio
 service:       Ember.js
-permalink:     /projects/:title
+permalink:     /projects/deliver-ee
 description:   I've been working with the team at [deliver.ee](http://www.deliver.ee) for the past few months. The product allows businesses to deliver packages the same-day without having to manage directly the carriers.
 
 ---
