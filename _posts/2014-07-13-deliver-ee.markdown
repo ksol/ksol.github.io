@@ -1,6 +1,6 @@
 ---
 layout:        default
-date:          2014-07-15
+date:          2014-11-15
 small-img:     deliver.ee.png
 img:           deliver.ee.png
 alt:           deliver.ee
@@ -18,6 +18,6 @@ description:   I've been working with the team at [deliver.ee](http://www.delive
 ---
 I've been working with the team at [deliver.ee](http://www.deliver.ee) for the past few months. The product allows businesses to deliver packages the same-day without having to manage directly the carriers.
 
-At the beginning of September, Sébastien was looking for someone that could help with a set of three web applications: they had a deadline that could not be missed and were understaffed. The applications are made with [Ember.js](http://www.emberjs.com) and consuming a common API (made with Ruby on Rails). One is meant to be used by the business, one by the deliver.ee team, and one by the carriers.
+At the beginning of September, Sébastien was looking for someone that could help with a set of three web applications: they had a deadline that could not be missed and were understaffed. The applications are made with [Ember.js](http://www.emberjs.com) and consuming a common API (made with Ruby on Rails). One is meant to be used by the businesses, one by the deliver.ee team, and the last one by the carriers.
 
-I start working on the project under the guidance of another developper, and took over as lead developper once he could no longer be available. After a few weeks of work the deadline was respected, and since then I'm maintaining the applications, integrating new features, fixing undesired behaviours, and helping Sébastien learn Ember.js and find his was in the code bases.
+I started working on the project under the guidance of another developper and took over as lead developper once he was no longer available. After a few weeks of work the deadline was respected, and since then I'm maintaining the applications, integrating new features, fixing undesired behaviours, and helping Sébastien learn his way around Ember.js and the code bases.
