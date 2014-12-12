@@ -77,43 +77,21 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: white;
-}
-
-.main-header {
-    background-image: url("/img/background.jpg");
+    background-image: url("img/background.jpg");
     background-size: cover;
 }
 
-.blog-header {
-    margin-top: 60px;
-    height: 260px;
-    background-image: url("/img/blog-header.jpg");
-    background-size: cover;
-    background-position: center;
-    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-@media(min-width:768px) {
-    .blog-header {
-        margin-top: 110px;
-    }
-}
-.blog-title {
-    margin-top: 140px;
-    color: rgba(255, 255, 255, 0.60);
-}
-
-.main-header .container {
+header .container {
     padding-top: 100px;
     padding-bottom: 50px;
 }
 
-.main-header img {
+header img {
     display: block;
     margin: 0 auto 20px;
 }
 
-.main-header .intro-text .name {
+header .intro-text .name {
     display: block;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -121,22 +99,22 @@ header {
     font-weight: 700;
 }
 
-.main-header .intro-text .skills {
+header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
 
 @media(min-width:768px) {
-    .main-header .container {
+    header .container {
         padding-top: 200px;
         padding-bottom: 100px;
     }
 
-    .main-header .intro-text .name {
+    header .intro-text .name {
         font-size: 4.75em;
     }
 
-    .main-header .intro-text .skills {
+    header .intro-text .skills {
         font-size: 1.75em;
     }
 }

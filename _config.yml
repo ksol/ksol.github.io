@@ -8,8 +8,7 @@ color:
   primary: E2ECF0 #80B3FF
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
-  blog-link: 567698
-  blog-link-secondary: 80A4CA
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
