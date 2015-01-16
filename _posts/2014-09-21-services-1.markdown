@@ -1,0 +1,13 @@
+---
+layout: default
+img: rails.png
+category: Services
+title: Ruby on Rails
+description: |
+  <p class="lead">
+    Whether you need help on a brand new project or are looking for someone
+    to take care of your aging application, I have more than 4 years
+    of expertise to put at your service.
+  </p>
+
+---

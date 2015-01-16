@@ -1,0 +1,12 @@
+---
+layout: default
+img: prototyping.png
+category: Services
+title: Prototyping
+description: |
+  <p class="lead">
+    Do you need to explore a project idea before fully committing to it? Don't spend more time than necessary.
+    <br>
+    Whether for a web project or mobile application, I can help you get answers quickly.
+  </p>
+---

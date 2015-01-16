@@ -1,45 +1,32 @@
-    <!-- Footer -->
-    <footer class="text-center">
-      <div class="footer-above">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col col-md-6">
-              <h3>Location</h3>
-              <p>
-                {% for adress in site.address %}
-                {{ adress.line }} <br>
-                {% endfor %}
-              </p>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/blog">Blog</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; {{ site.title }} All Rights Reserved</p>
             </div>
-            <div class="footer-col col-md-6">
-              <h3>Around the Web</h3>
-              <ul class="list-inline">
-                {% for network in site.social %}
-                <li>
-                  <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
-                </li>
-                {% endfor %}
-              </ul>
+            <div class="col-md-4">
+                <small>
+                    Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.
+                </small>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="footer-below">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              Copyright &copy; {{ site.title }} 20{{ site.time | date: '%y' }}.
-              Header picture from <a href="https://www.flickr.com/photos/k_raw/14511483798">k_raw</a>.
-              Graphic theme built upon <a href="https://github.com/jeromelachaud/freelancer-theme">Freelancer</a>.
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visble-sm">
-      <a class="btn btn-primary" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
     </div>
+</footer>
