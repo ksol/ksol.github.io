@@ -1,69 +1,58 @@
 <!-- Page Content -->
 <div class="content-section-a">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 col-sm-push-3 col-sm-6">
-                <p class="lead">
-                    I'm here to help <strong>YOU</strong> with your web projects.
-                </p>
-                <p class="lead">
-                  I strive for simplicity ("things should be made as simple as possible, but not simpler") and adequacy - using the right tools to solve the right problems.
-                </p>
-                <p class="lead">
-                  I believe in communication and interactions. I will not work <strong><em>for</em></strong> you, but <strong><em>with</em></strong> you: you will be involved at every step of your project.
-                </p>
-            </div>
-
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1 col-sm-push-3 col-sm-6">
+        <p class="lead">
+          I'm here to help <strong>YOU</strong> with your web projects.
+        </p>
+        <p class="lead">
+          I strive for simplicity ("things should be made as simple as possible, but not simpler") and adequacy - using the right tools to solve the right problems.
+        </p>
+        <p class="lead">
+          I believe in communication and interactions. I will not work <strong><em>for</em></strong> you, but <strong><em>with</em></strong> you: you will be involved at every step of your project.
+        </p>
+      </div>
     </div>
+  </div>
 </div>
 
 {% for post in site.posts reversed %}
-  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' %}
+  {% capture thecycle %}
+    {% cycle 'odd', 'even' %}
+  {% endcapture %}
+
+  {% if thecycle == 'odd' %}
     <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
-                    {{ post.description }}
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive img-service img-right" src="img/services/{{ post.img }}" alt="">
-                </div>
-            </div>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">{{ post.title }}</h2>
+            {{ post.description }}
+          </div>
+          <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+            <img class="img-responsive img-service img-right" src="img/services/{{ post.img }}" alt="">
+          </div>
         </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-    {% else %}
-
+      </div> <!-- /.container -->
+    </div><!-- /.content-section-a -->
+  {% else %}
     <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
-                    {{ post.description }}
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive img-service" src="img/services/{{ post.img }}" alt="">
-                </div>
-            </div>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">{{ post.title }}</h2>
+            {{ post.description }}
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img class="img-responsive img-service" src="img/services/{{ post.img }}" alt="">
+          </div>
         </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-    {% endif %}
+      </div> <!-- /.container -->
+    </div> <!-- /.content-section-b -->
+  {% endif %}
 {% endfor %}

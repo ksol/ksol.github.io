@@ -8,12 +8,8 @@ description: "I'm a freelance web developper"
 social:
   - title: twitter
     url: https://twitter.com/ksol
-  - title: linkedin
-    url: https://www.linkedin.com/in/ksoltysiak
   - title: stack-overflow
     url: https://stackoverflow.com/users/669020/ksol
-  - title: bitbucket
-    url: https://bitbucket.org/ksol
   - title: github
     url: https://github.com/ksol
 
