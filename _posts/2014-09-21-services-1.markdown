@@ -3,6 +3,7 @@ layout: default
 img: rails.png
 category: Services
 title: Ruby on Rails expert
+sitemap: false
 description: |
   <p class="lead">
     Whether you need help on a brand new project or are looking for someone
