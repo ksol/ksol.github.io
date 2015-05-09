@@ -1,6 +1,7 @@
 ---
 layout: default
 img: prototyping.png
+imgAlt: Prototyping logo
 category: Services
 title: Prototyping
 sitemap: false

@@ -1,9 +1,11 @@
 ---
 layout: default
 img: rails.png
+imgAlt: Ruby on Rails logo
 category: Services
 title: Ruby on Rails expert
 sitemap: false
+linkName: ruby-on-rails
 description: |
   <p class="lead">
     Whether you need help on a brand new project or are looking for someone

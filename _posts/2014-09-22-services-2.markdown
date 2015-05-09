@@ -1,9 +1,11 @@
 ---
 layout: default
 img: emberjs.png
+imgAlt: Ember.js logo
 category: Services
 title: Ember.js developper
 sitemap: false
+linkName: ember-js
 description: |
   <p class="lead">
     Do you need your web application to feel as fast and smooth as a native application?
