@@ -2,7 +2,7 @@
 layout: default
 img: rails.png
 category: Services
-title: Ruby on Rails
+title: Ruby on Rails expert
 description: |
   <p class="lead">
     Whether you need help on a brand new project or are looking for someone
