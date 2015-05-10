@@ -31,44 +31,69 @@
 
     <div class="content-section-{% if thecycle == 'odd' %}b{% else %}a{% endif %}">
       <div class="container">
-        <div class="row visible-xs-block">
-          <div class="col-xs-12 text-center">
-            <img class="img-service-small" src="/img/services/{{ post.img }}" alt="{{post.imgAltFrench}}" title="{{post.titleFrench}}">
-            <hr>
+        {% if post.hasTwoParts %}
+          <div class="row">
+            <div class="col-xs-12 col-md-5">
+              <hr class="section-heading-spacer hidden-xs">
+              <div class="clearfix"></div>
+              <h2 class="section-heading">
+                {{ post.titleLeftFrench }}
+              </h2>
+              <p class="lead">
+                {{ post.contentLeftFrench }}
+              </p>
+            </div>
+            <div class="col-xs-12 col-md-5 col-md-offset-2">
+              <hr class="section-heading-spacer hidden-xs pull-right">
+              <div class="clearfix"></div>
+              <h2 class="section-heading text-right">
+                {{ post.titleRightFrench }}
+              </h2>
+              <p class="lead pull-right">
+                {{ post.contentRightFrench }}
+              </p>
+            </div>
           </div>
-        </div>
+        {% else %}
+          <div class="row visible-xs-block">
+            <div class="col-xs-12 text-center">
+              <img class="img-service-small" src="/img/services/{{ post.img }}" alt="{{post.imgAltFrench}}" title="{{post.titleFrench}}">
+              <hr>
+            </div>
+          </div>
 
-        <div class="row">
-          {% if thecycle == 'odd' %}
-            <div class="col-lg-5 col-sm-6">
-          {% else %}
-            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
-          {% endif %}
+          <div class="row">
+            {% if thecycle == 'odd' %}
+              <div class="col-lg-5 col-sm-6">
+            {% else %}
+              <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+            {% endif %}
 
-            <hr class="section-heading-spacer hidden-xs">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">
-              {% if post.linkName %}
-                <a href="/fr/freelancer/{{post.linkName}}" title="{{post.titleFrench}}">
+              <hr class="section-heading-spacer hidden-xs">
+              <div class="clearfix"></div>
+              <h2 class="section-heading">
+                {% if post.linkName %}
+                  <a href="/fr/freelancer/{{post.linkName}}" title="{{post.titleFrench}}">
+                    {{ post.titleFrench }}
+                  </a>
+                {% else %}
                   {{ post.titleFrench }}
-                </a>
-              {% else %}
-                {{ post.titleFrench }}
-              {% endif %}
-            </h2>
-            <p class="lead">
-              {{ post.descriptionFrench }}
-            </p>
-          </div>
+                {% endif %}
+              </h2>
+              <p class="lead">
+                {{ post.descriptionFrench }}
+              </p>
+            </div>
 
-          {% if thecycle == 'odd' %}
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6 hidden-xs">
-          {% else %}
-            <div class="col-lg-5 col-sm-pull-6 col-sm-6 hidden-xs">
-          {% endif %}
-            <img class="img-responsive img-service {% if thecycle == 'odd' %}img-right{% endif %}" src="/img/services/{{ post.img }}" alt="{{post.imgAltFrench}}" title="{{post.titleFrench}}">
+            {% if thecycle == 'odd' %}
+              <div class="col-lg-5 col-lg-offset-2 col-sm-6 hidden-xs">
+            {% else %}
+              <div class="col-lg-5 col-sm-pull-6 col-sm-6 hidden-xs">
+            {% endif %}
+              <img class="img-responsive img-service {% if thecycle == 'odd' %}img-right{% endif %}" src="/img/services/{{ post.img }}" alt="{{post.imgAltFrench}}" title="{{post.titleFrench}}">
+            </div>
           </div>
-        </div>
+        {% endif %}
       </div> <!-- /.container -->
     </div><!-- /.content-section-a -->
   {% endif %}
