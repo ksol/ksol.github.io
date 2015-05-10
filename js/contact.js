@@ -17,7 +17,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://formkeep.com/f/2f5b7217a216",
+                url: "http://formspree.io/contact@ksol.fr",
                 type: "POST",
                 data: {
                     name: name,
