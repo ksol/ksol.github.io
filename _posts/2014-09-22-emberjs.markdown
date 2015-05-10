@@ -1,0 +1,22 @@
+---
+layout: default
+img: emberjs.png
+imgAlt: Ember.js logo
+imgAltFrench: Logo Ember.js
+category: Services
+title: Ember.js developper
+titleFrench: Développeur Ember.js
+sitemap: false
+linkName: ember-js
+description: |
+  Do you need your web application to feel as fast and smooth as a native application?
+  Ember.js is the answer you're looking for.
+  <br>
+  I have been working with Ember since the first versions, and can see your project through.
+
+descriptionFrench: |
+  Avez-vous besoin que votre application web soit aussi rapide et agréable qu'une application native?
+  Ember.js est la réponse qu'il vous faut.
+  <br>
+  Je travaille avec Ember depuis les premières versions, et peux mener votre projet à bout.
+---
