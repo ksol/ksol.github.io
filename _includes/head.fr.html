@@ -13,9 +13,14 @@
     <title>
       {% if page.title %}
         {{ page.title }}
+
+        {% if page.subTitle %}
+        - {{ page.subTitle }}
+        {% endif %}
       {% else %}
         {{ site.title }}
       {% endif %}
+      - Paris - Strasbourg
     </title>
 
     <!-- Latest compiled and minified CSS -->
