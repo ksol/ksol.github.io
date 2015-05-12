@@ -10,10 +10,14 @@ titleRight: Javascript developer
 titleRightFrench: Développeur Javascript
 
 contentLeft: |
-  Ruby doesn't need Rails to be a great and useful tool. I've developped applications in lighter frameworks such as Sinatra when Rails was not necessary, as well as many command-line utilities over the years. I also developped several iOS applications with RubyMotion.
+  Ruby doesn't need Rails to be a great and useful tool. I've developped applications in lighter frameworks such as Sinatra when Rails was not necessary, as well as many command-line utilities over the years.
+  </p><p class="lead">
+  I also developped several iOS applications with RubyMotion.
 
 contentLeftFrench: |
-  Ruby est un outil puissant et agréable en lui-même. J'ai développé des applications web avec Sinatra pour les projets où Rails n'était pas la solution la plus adaptée. J'ai également mis au point plusieurs utilitaires pour ligne de commande au fil des années. Enfin, j'ai réalisé des applications iOS avec RubyMotion.
+  Ruby est un outil puissant et agréable en lui-même. J'ai développé des applications web avec Sinatra pour les projets où Rails n'était pas la solution la plus adaptée. J'ai également mis au point plusieurs utilitaires pour ligne de commande au fil des années.
+  </p><p class="lead">
+  Enfin, j'ai réalisé des applications iOS avec RubyMotion.
 
 contentRight: |
   My javascript skillset is not limited to Ember.js. I've used intensively jQuery, programmed in other frameworks such as Backbone.js or Angular.js, and developped real-time features with technologies such as websockets or server-side events.
