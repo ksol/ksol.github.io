@@ -254,3 +254,7 @@ p.copyright {
 .flag-icon-gb.flag-icon-squared {
   background-image: url(/img/flags/1x1/gb.svg);
 }
+
+li.footer-menu-divider-smaller {
+  padding: 0;
+}
