@@ -6,6 +6,8 @@ imgAltFrench: Logo prototypage
 category: Services
 title: Prototyping
 titleFrench: Prototypage
+contactText: Contact me about prototyping
+contactTextFrench: Me contacter à propos du prototypage
 sitemap: false
 
 description: |

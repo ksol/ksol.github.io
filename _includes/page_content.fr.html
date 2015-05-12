@@ -82,7 +82,18 @@
               </h2>
               <p class="lead">
                 {{ post.descriptionFrench }}
+
+                {% if post.linkName %}
+                  <a href="/fr/freelancer/{{post.linkName}}" title="{{post.titleFrench}}">
+                    Read more...
+                  </a>
+                {% endif %}
               </p>
+
+              <a href="/fr/contact" title="{{post.contactTextFrench}}" class="btn btn-success btn-lg">
+                <i class="fa fa-envelope"></i>
+                {{ post.contactTextFrench }}
+              </a>
             </div>
 
             {% if thecycle == 'odd' %}

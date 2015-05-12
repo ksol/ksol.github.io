@@ -6,12 +6,14 @@ imgAltFrench: Logo Ember.js
 category: Services
 title: Ember.js developper
 titleFrench: Développeur Ember.js
+contactText: Contact me about Ember.js
+contactTextFrench: Me contacter à propos d'Ember.js
 sitemap: false
 linkName: ember-js
 description: |
   Do you need your web application to feel as fast and smooth as a native application?
   Ember.js is the answer you're looking for.
-  <br>
+  </p><p class="lead">
   I have been working with Ember since the first versions, and can see your project through.
 
 descriptionFrench: |
