@@ -258,3 +258,7 @@ p.copyright {
 li.footer-menu-divider-smaller {
   padding: 0;
 }
+
+.project-screenshot {
+  max-width:100%;
+}
