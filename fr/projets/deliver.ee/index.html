@@ -15,7 +15,7 @@ enLink: /projects/deliver.ee
         </div>
       </div>
 
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
         <p class="project-content">
           <a href="http://www.deliver.ee">deliver.ee</a> is a french start-up whose goal is to make deliveries as easy as possible. They allow businesses to offer their clients same-day delivery for instance, but anybody can use the service and do one-off deliveries, all of this without having to care about the carriers.
         </p>
@@ -25,17 +25,133 @@ enLink: /projects/deliver.ee
         </p>
 
         <p class="project-content">
-          Three applications were concerned: "cockpit", the one used by the team to monitor and handle everything, "pro", the one used by businesses to order deliveries and follow them, and "carrier", the one used by the carriers to receive delivery orders, follow them, update them, and so on.
+          Three applications were concerned, all made with <a href="http://www.emberjs.com">ember.js</a>. I started working on the project under the guidance of another developper and took over as lead developper once he was no longer available.
+        </p>
+
+        <div class="page-header">
+          <h2>Pro</h2>
+        </div>
+
+        <p class="project-content">
+          "Pro" is the application used by businesses to order deliveries and follow them. Once logged in, the user lands on a dashboard where he can glance at some statistics and monitor the state of their latests "missions".
+          A mission is a request for a delivery: their lifecycle goes from "pending" (just requested) to "fulfilled" (the client got his delivery).
+        </p>
+
+        <img src="/img/portfolio/deliver.ee/pro1.png" class="project-screenshot">
+        <div class="text-center">
+          <small>
+            <em>Pro: the dashboard interface</em>
+          </small>
+        </div>
+
+        <hr>
+
+        <p class="project-content">
+          The main page of the application is the one where a user can request a mission. This page needed both to be packed with all expected features while staying clear and easy enough to use, and this was not always an easy task.
         </p>
 
         <p class="project-content">
-          The applications are made with <a href="http://www.emberjs.com">ember.js</a>. I started working on the project under the guidance of another developper and took over as lead developper once he was no longer available.
-          <br>
-          There was many challenges: we needed to be quick to develop features, but also sharing as many code as possible across the three web applications, staying up to date with ember.js and an ecosystem (ember data, ember-cli, internationalization) that was changing quickly, but in the end we managed to overcome most, if not all of them.
+          In the end, we're using "blocks" to delimit the content, a UI pattern used in all of the three applications. At the top is where you fill the start and end addresses for the mission. You can either fill a new one, or use one already supplied from a previous mission. This is also where you configure how the delivery/withdrawal is secured, and where you'll be notified is the area is not covered by the service.
+        </p>
+        <p class="project-content">
+          Then, you have the date/time block, where you can either hand-pick a date and time, or choose one of the predefined slots. After, there is the vehicle selection and the package settings: only one of them is required to be filled. And finally, you can supply a internal ID number, and configure how you want to be notified for this mission.
+        </p>
+
+        <img src="/img/portfolio/deliver.ee/pro2.png" class="project-screenshot">
+        <div class="text-center">
+          <small>
+            <em>Pro: the interface used to request a delivery</em>
+          </small>
+        </div>
+
+        <hr>
+
+        <p class="project-content">
+          The rest of the applications mainly revolves around mission monitoring and "resources" handling (eg. users, permissions, addresses, warehouses, notifications, settings, ...)
+        </p>
+
+        <img src="/img/portfolio/deliver.ee/pro3.png" class="project-screenshot">
+        <div class="text-center">
+          <small>
+            <em>Pro: one of the settings page, the notifications</em>
+          </small>
+        </div>
+
+        <hr>
+
+        <p class="project-content">
+          This application is also translated in both french and english. Users permissions are finely grained, as well as businesses' (through quotas of missions).
+        </p>
+
+        <div class="page-header">
+          <h2>Cockpit</h2>
+        </div>
+
+        <p class="project-content">
+          "Cockpit" is the application used by the deliver.ee team to display, monitor and handle everything: missions, users, companies, carriers, etc.
+        </p>
+
+        <img src="/img/portfolio/deliver.ee/cockpit1.png" class="project-screenshot">
+        <div class="text-center">
+          <small>
+            <em>Cockpit: the list of missions</em>
+          </small>
+        </div>
+
+        <hr>
+
+        <p class="project-content">
+          Everything can be done through cockpit: complete management of every entity. The team can even order missions themselves if needed, with the same interface as the one in the Pro application.
+          The team can also manually dispatch missions to a specific carrier.
+        </p>
+
+        <img src="/img/portfolio/deliver.ee/cockpit2.png" class="project-screenshot">
+        <div class="text-center">
+          <small>
+            <em>Cockpit: the list of companies</em>
+          </small>
+        </div>
+
+        <hr>
+
+        <img src="/img/portfolio/deliver.ee/cockpit3.png" class="project-screenshot">
+        <div class="text-center">
+          <small>
+            <em>Cockpit: the view for one company</em>
+          </small>
+        </div>
+
+        <hr>
+
+        <p class="project-content">
+          Cockpit and Pro have a lot of screens in common, with only minor variations, due to the design of the page, the permissions handling, and the need for internationalization that was not necessary (yet!) for the former. Therefore, I organized the projects so that everything that could be shared was. This was important to ensure that future updates would not require changes in two or three places.
+        </p>
+
+        <div class="page-header">
+          <h2>Carrier</h2>
+        </div>
+
+        <p class="project-content">
+          "Carrier" is the application used by the carriers to receive delivery orders, follow them, update them, and so on, and is optimized for handheld devices. While not as feature packed as the two others, this application has some very specific features.
+        </p>
+
+
+        <p class="project-content">
+          The carrier can see three lists of missions: the ones he is allowed to handle, the ones he is handling, and the ones he was specifically asked to handle. He can either accept or refuse those.
         </p>
 
         <p class="project-content">
-          After a few weeks of work the deadline was respected, and since then I was involved in maintaining the applications, integrating new features, fixing undesired behaviours, and helping Sébastien learn his way around Ember.js and the different code bases.
+          Once he has accepted a mission, he has access to a map indicating him where he has to go to fetch the package(s). Whoever gives him the package is required to sign (on the phone screen) to validate the action. And the same goes on for the delivery: the client also has to sign.
+        </p>
+
+        <p class="project-content">
+          Each action updates the status of the mission, which can also be failed, refused, or rescheduled. And considering mistakes can happen pretty easily on touch devices, the carrier has 5 seconds to cancel an action after it was done.
+        </p>
+
+        <hr>
+
+        <p class="project-content">
+          After a few weeks of work, the deadline was respected, and since then I was involved in maintaining the applications, integrating new features, fixing undesired behaviours, and helping Sébastien learn his way around Ember.js and the different code bases. The various projects were very interesting and the team very supportive and fun to work with. I wish them nothing but success in their future.
         </p>
 
         <ul class="project-summary">
