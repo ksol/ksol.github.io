@@ -34,7 +34,11 @@
           <a href="http://blog.ksol.fr">Blog</a>
         </li>
         <li>
-          <a href="/fr/">
+          {% if page.frLink %}
+            <a href="{{page.frLink}}">
+          {% else %}
+            <a href="/fr/">
+          {% endif %}
             <span class="flag-icon flag-icon-fr"></span>
           </a>
         </li>

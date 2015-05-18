@@ -35,7 +35,11 @@
         </li>
 
         <li>
-          <a href="/">
+          {% if page.enLink %}
+            <a href="{{page.enLink}}">
+          {% else %}
+            <a href="/">
+          {% endif %}
             <span class="flag-icon flag-icon-gb"></span>
           </a>
         </li>
