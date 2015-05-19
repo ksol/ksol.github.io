@@ -17,15 +17,16 @@ enLink: /projects/deliver.ee
 
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
         <p class="project-content">
-          <a href="http://www.deliver.ee">deliver.ee</a> is a french start-up whose goal is to make deliveries as easy as possible. They allow businesses to offer their clients same-day delivery for instance, but anybody can use the service and do one-off deliveries, all of this without having to care about the carriers.
+          <a href="http://www.deliver.ee">deliver.ee</a> est une start-up parisienne dont le but est de rendre les livraisons aussi simples et rapides que possible. Ils permettent aux entreprises de réaliser des livraisons intra-urbaines le jour même, et le service est également accessible aux particuliers. La logistique des transporteurs est totalement gérée par deliver.ee.
         </p>
 
         <p class="project-content">
-          The service revolves around a core API (made with Ruby on Rails) and several web-applications. At the beginning of September, <a href="mailto:contact@deliver.ee">Sébastien</a> (CTO of deliver.ee) was looking for someone that could help him finish some of those applications before an important deadline.
+          Le produit fonctionne autour d'un service central, une API réalisée avec <a href="/fr/freelancer/ruby-on-rails">Ruby on Rails</a>, et plusieurs applications web. Début septembre 2014, <a href="mailto:contact@deliver.ee">Sébastien</a> (directeur technique de deliver.ee) recherchait quelqu'un pour l'aider à finir certaines de ces applications avant une deadline importante.
         </p>
 
         <p class="project-content">
-          Three applications were concerned, all made with <a href="http://www.emberjs.com">ember.js</a>. I started working on the project under the guidance of another developper and took over as lead developper once he was no longer available.
+          Trois applications étaient concernées, toutes réalisées avec <a href="/fr/freelancer/ember-js">ember.js</a>.
+          J'ai commencé a travailler sur le projet sous la guidance d'un autre développeur, et suis passé développeur principal une fois qu'il n'était plus disponible.
         </p>
 
         <div class="page-header">
@@ -33,54 +34,56 @@ enLink: /projects/deliver.ee
         </div>
 
         <p class="project-content">
-          "Pro" is the application used by businesses to order deliveries and follow them. Once logged in, the user lands on a dashboard where he can glance at some statistics and monitor the state of their latests "missions".
-          A mission is a request for a delivery: their lifecycle goes from "pending" (just requested) to "fulfilled" (the client got his delivery).
+          "Pro" est l'application utilisée par les entreprises pour commander des livraisons et suivre leurs progression. Un fois connectés à l'interface, les utilisateurs arrivent sur un tableau de bord où ils ont accès en un coup d'oeil à plusieurs statistiques utiles ainsi qu'aux dernières mises à jours de leurs "missions". Une mission est une demande de livraison, et évolue au fil du temps de "en attente" (la demande vient d'être effectuée) à "livrée" (le client a reçu son/ses colis).
         </p>
 
         <img src="/img/portfolio/deliver.ee/pro1.png" class="project-screenshot">
         <div class="text-center">
           <small>
-            <em>Pro: the dashboard interface</em>
+            <em>Pro: l'interface du tableau de bord</em>
           </small>
         </div>
 
         <hr>
 
         <p class="project-content">
-          The main page of the application is the one where a user can request a mission. This page needed both to be packed with all expected features while staying clear and easy enough to use, and this was not always an easy task.
+          La page principale de l'application est celle où les utilisateurs peuvent commander une mission.
+          Cette page nécessitait de comporter toutes les fonctionnalités attendues d'un tel système tout en restant claire et concise, ce qui n'était pas toujours tâche facile.
         </p>
 
         <p class="project-content">
-          In the end, we're using "blocks" to delimit the content, a UI pattern used in all of the three applications. At the top is where you fill the start and end addresses for the mission. You can either fill a new one, or use one already supplied from a previous mission. This is also where you configure how the delivery/withdrawal is secured, and where you'll be notified is the area is not covered by the service.
+          Au final, nous sommes partis sur une logique de "blocs" pour délimiter les contenus, une logique qui sera réutilisée dans les autres applications.
+          Tout en haut se trouvent les sections permettant de renseigner les adresses de départ et d'arrivée. Les utilisateurs peuvent soit entrer une adresse à la main, soit en choisir une précédente, ou bien en prendre une du carnet d'adresse ou d'entrepots. C'est aussi ici que se configurent la sécurisation du retrait et de la livraison et que le service vous notifie si la zone demandée n'est pas couverte.
         </p>
+
         <p class="project-content">
-          Then, you have the date/time block, where you can either hand-pick a date and time, or choose one of the predefined slots. After, there is the vehicle selection and the package settings: only one of them is required to be filled. And finally, you can supply a internal ID number, and configure how you want to be notified for this mission.
+          Ensuite les utilisateurs peuvent choisir le délai de livraison, une date et une heure, ou bien un créneau prédéfini. Puis vient la sélection du type de véhicule et le renseignement du/des colis qui doivent être livrés, une seule de ces deux sections étant requise. Enfin, les utilisateurs peuvent préciser un numéro de référence interne et comment ils souhaitent être notifiés du suivi de cette mission.
         </p>
 
         <img src="/img/portfolio/deliver.ee/pro2.png" class="project-screenshot">
         <div class="text-center">
           <small>
-            <em>Pro: the interface used to request a delivery</em>
+            <em>Pro: l'interface de commande de mission</em>
           </small>
         </div>
 
         <hr>
 
         <p class="project-content">
-          The rest of the applications mainly revolves around mission monitoring and "resources" handling (eg. users, permissions, addresses, warehouses, notifications, settings, ...)
+          Le reste de l'application permet principalement de suivre les missions et de gérer les différentes resources: les utilisateurs, leurs droits, les adresses/entrepots, les notifications et autres paramètres, ...
         </p>
 
         <img src="/img/portfolio/deliver.ee/pro3.png" class="project-screenshot">
         <div class="text-center">
           <small>
-            <em>Pro: one of the settings page, the notifications</em>
+            <em>Pro: la page de configuration des notifications</em>
           </small>
         </div>
 
         <hr>
 
         <p class="project-content">
-          This application is also translated in both french and english. Users permissions are finely grained, as well as businesses' (through quotas of missions).
+          Cette application est disponible en anglais et français, et d'autres langues peuvent facilement être ajoutée. Les permissions sont finements gérées, aussi bien celles des utilisateurs que des entreprises au travers des quotas de missions.
         </p>
 
         <div class="page-header">
@@ -88,27 +91,26 @@ enLink: /projects/deliver.ee
         </div>
 
         <p class="project-content">
-          "Cockpit" is the application used by the deliver.ee team to display, monitor and handle everything: missions, users, companies, carriers, etc.
+          "Cockpit" est l'application utilisée par l'équipe de deliver.ee pour consulter et gérer à peu près tout: missions, utilisateurs, entreprises, transporteurs, etc.
         </p>
 
         <img src="/img/portfolio/deliver.ee/cockpit1.png" class="project-screenshot">
         <div class="text-center">
           <small>
-            <em>Cockpit: the list of missions</em>
+            <em>Cockpit: la liste des missions</em>
           </small>
         </div>
 
         <hr>
 
         <p class="project-content">
-          Everything can be done through cockpit: complete management of every entity. The team can even order missions themselves if needed, with the same interface as the one in the Pro application.
-          The team can also manually dispatch missions to a specific carrier.
+          Tout peut être réalisé au travers du cockpit. L'équipe peut suivre et faire évoluer les commandes, y compris assigner un transporteur à la main si nécessaire, et même commander une mission pour le compte d'une entreprise au cas où elle ne peut le faire elle même.
         </p>
 
         <img src="/img/portfolio/deliver.ee/cockpit2.png" class="project-screenshot">
         <div class="text-center">
           <small>
-            <em>Cockpit: the list of companies</em>
+            <em>Cockpit: la liste des entreprises</em>
           </small>
         </div>
 
@@ -117,14 +119,14 @@ enLink: /projects/deliver.ee
         <img src="/img/portfolio/deliver.ee/cockpit3.png" class="project-screenshot">
         <div class="text-center">
           <small>
-            <em>Cockpit: the view for one company</em>
+            <em>Cockpit: affichage d'une enreprise en particulier</em>
           </small>
         </div>
 
         <hr>
 
         <p class="project-content">
-          Cockpit and Pro have a lot of screens in common, with only minor variations, due to the design of the page, the permissions handling, and the need for internationalization that was not necessary (yet!) for the former. Therefore, I organized the projects so that everything that could be shared was. This was important to ensure that future updates would not require changes in two or three places.
+          Cockpit et Pro ont beaucoup de sections et d'écrans similaires, avec comme seules différences la gestion des permissions et des points esthétiques. C'est pourquoi dès le départ j'ai organisé les projets de façon à ce que le maximum d'éléments puissent être partagés entre les applications pour en faciliter la maintenance, plutot que d'avoir à effectuer la même modification à deux ou trois endroits différents.
         </p>
 
         <div class="page-header">
@@ -132,38 +134,39 @@ enLink: /projects/deliver.ee
         </div>
 
         <p class="project-content">
-          "Carrier" is the application used by the carriers to receive delivery orders, follow them, update them, and so on, and is optimized for handheld devices. While not as feature packed as the two others, this application has some very specific features.
-        </p>
-
-
-        <p class="project-content">
-          The carrier can see three lists of missions: the ones he is allowed to handle, the ones he is handling, and the ones he was specifically asked to handle. He can either accept or refuse those.
+          "Carrier" est l'application utilisée par les transporteurs pour recevoir, suivre, et mettre à jour les demandes de livraison. Cette application est optimisées pour les terminaux mobiles, notamment les smartphones.
+          Elle n'est pas aussi remplie en fonctionnalités que les deux précédentes, mais contient des éléments bien spécifiques.
         </p>
 
         <p class="project-content">
-          Once he has accepted a mission, he has access to a map indicating him where he has to go to fetch the package(s). Whoever gives him the package is required to sign (on the phone screen) to validate the action. And the same goes on for the delivery: the client also has to sign.
+          Les transporteurs peuvent consulter trois listes de missions: celles qu'ils sont autorisés à gérer, celles qu'ils gèrent actuellement, et celles qui leurs ont été directement assignées. Ils peuvent accepter et refuser ces dernières.
         </p>
 
         <p class="project-content">
-          Each action updates the status of the mission, which can also be failed, refused, or rescheduled. And considering mistakes can happen pretty easily on touch devices, the carrier has 5 seconds to cancel an action after it was done.
+          Une fois une mission acceptée, ils ont accès aux informations nécessaires pour passer à l'étape suivante: l'adresse et une carte indiquant où ils doivebt récupérer le colis, pour commencer, puis celles du client à livrer. La personne en charge de leur remettre le colis doit signer (sur le téléphone) pour valider la remise. Il en est de même pour le client qui reçoit son colis qui doit également signer afin d'accuser la réception.
+        </p>
+
+        <p class="project-content">
+          Chaque action a un impact sur l'état de la mission, qui peut très bien être échouée (client absent), refusée (le client ne veut pas récupérer le colis), ou re-programmée plus tard.
+          Etant donné que les erreurs arrivent assez facilement sur un écran tactile, les transporteurs disposent de 5 secondes après chaque action pour l'annuler.
         </p>
 
         <hr>
 
         <p class="project-content">
-          After a few weeks of work, the deadline was respected, and since then I was involved in maintaining the applications, integrating new features, fixing undesired behaviours, and helping Sébastien learn his way around Ember.js and the different code bases. The various projects were very interesting and the team very supportive and fun to work with. I wish them nothing but success in their future.
+          Au bout de quelques semaines d'efforts la deadline fut respectée, et mon implication par la suite a consisté à maintenir les applications, intégrer quelques nouvelles fonctionnalités, corriger certains comportements non désirés, et aider Sébastien à prendre ses repères avec Ember.js et les différentes bases de code. Les projets étaient très intéressants et l'équipe très agréable à travailler avec. Je ne leur souhaite que du succès pour leur futur.
         </p>
 
         <ul class="project-summary">
-          <li>From: september 2014 to february 2015</li>
-          <li>Languages/tools: ember.js, ember-cli, node.js, ruby on rails</li>
+          <li>Durée: de septembre 2014 à february 2015</li>
+          <li>Langages/outils: ember.js, ember-cli, node.js, ruby on rails</li>
           <li>
-            Missions:
+            Quelques missions:
             <ul class="project-missions">
-              <li>conversion of an ember app from ember-appkit to ember-cli</li>
-              <li>code-sharing via an private ember-cli addon</li>
-              <li>internationalization/localization of an interface</li>
-              <li>teaching/helping team members</li>
+              <li>Conversion d'une application ember de ember-appkit à ember-cli</li>
+              <li>Partage de code via un addon privé ember-cli</li>
+              <li>Internationalisation/localisation d'une interface</li>
+              <li>Transmission des connaissances/mentoring de l'équipe</li>
             </ul>
           </li>
         </ul>

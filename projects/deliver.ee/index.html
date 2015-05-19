@@ -17,15 +17,15 @@ frLink: /fr/projets/deliver.ee
 
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
         <p class="project-content">
-          <a href="http://www.deliver.ee">deliver.ee</a> is a french start-up whose goal is to make deliveries as easy as possible. They allow businesses to offer their clients same-day delivery for instance, but anybody can use the service and do one-off deliveries, all of this without having to care about the carriers.
+          <a href="http://www.deliver.ee">deliver.ee</a> is a french start-up whose goal is to make deliveries as easy as possible. They allow businesses to offer their clients same-day delivery for instance, but anybody can use the service and do one-off deliveries, all of this without having to care about the carriers' logistics.
         </p>
 
         <p class="project-content">
-          The service revolves around a core API (made with Ruby on Rails) and several web-applications. At the beginning of September, <a href="mailto:contact@deliver.ee">Sébastien</a> (CTO of deliver.ee) was looking for someone that could help him finish some of those applications before an important deadline.
+          The product revolves around a central service, an API made with <a href="/freelancer/ruby-on-rails">Ruby on Rails</a>, and several web-applications. At the beginning of September 2014, <a href="mailto:contact@deliver.ee">Sébastien</a> (CTO of deliver.ee) was looking for someone that could help him finish some of those applications before an important deadline.
         </p>
 
         <p class="project-content">
-          Three applications were concerned, all made with <a href="http://www.emberjs.com">ember.js</a>. I started working on the project under the guidance of another developper and took over as lead developper once he was no longer available.
+          Three applications were concerned, all made with <a href="/fr/freelancer/ember-js">ember.js</a>. I started working on the project under the guidance of another developper and took over as lead developper once he was no longer available.
         </p>
 
         <div class="page-header">
@@ -33,8 +33,8 @@ frLink: /fr/projets/deliver.ee
         </div>
 
         <p class="project-content">
-          "Pro" is the application used by businesses to order deliveries and follow them. Once logged in, the user lands on a dashboard where he can glance at some statistics and monitor the state of their latests "missions".
-          A mission is a request for a delivery: their lifecycle goes from "pending" (just requested) to "fulfilled" (the client got his delivery).
+          "Pro" is the application used by businesses to order deliveries and follow them. Once logged in, the users land on a dashboard where they can glance at some statistics and monitor the state of their latests "missions".
+          A mission is a request for a delivery and evolves with the time, from "pending" (just requested) to "fulfilled" (the client got his package(s)).
         </p>
 
         <img src="/img/portfolio/deliver.ee/pro1.png" class="project-screenshot">
@@ -47,14 +47,15 @@ frLink: /fr/projets/deliver.ee
         <hr>
 
         <p class="project-content">
-          The main page of the application is the one where a user can request a mission. This page needed both to be packed with all expected features while staying clear and easy enough to use, and this was not always an easy task.
+          The main page of the application is the one where a user can request a mission. This page needed to be packed with all expected features while staying clear and easy enough to use, and this was not always an easy task.
         </p>
 
         <p class="project-content">
-          In the end, we're using "blocks" to delimit the content, a UI pattern used in all of the three applications. At the top is where you fill the start and end addresses for the mission. You can either fill a new one, or use one already supplied from a previous mission. This is also where you configure how the delivery/withdrawal is secured, and where you'll be notified is the area is not covered by the service.
+          In the end, we're using "blocks" to delimit the content, a UI pattern used in all of the applications. At the top is where users fill the start and end addresses for the mission. They can either fill a new one, or use one already supplied from a previous mission. This is also where they configure how the delivery/withdrawal is secured, and where they'll be notified if the area is not covered by the service.
         </p>
+
         <p class="project-content">
-          Then, you have the date/time block, where you can either hand-pick a date and time, or choose one of the predefined slots. After, there is the vehicle selection and the package settings: only one of them is required to be filled. And finally, you can supply a internal ID number, and configure how you want to be notified for this mission.
+          After, they can pick a duration for the delivery and either hand-pick a date and time, or choose one of the predefined slots. Then comes the vehicle selection and the package settings: only one of them is required to be filled. And finally, they can supply a internal ID number, and configure how they wish to be notified for this mission.
         </p>
 
         <img src="/img/portfolio/deliver.ee/pro2.png" class="project-screenshot">
@@ -67,7 +68,7 @@ frLink: /fr/projets/deliver.ee
         <hr>
 
         <p class="project-content">
-          The rest of the applications mainly revolves around mission monitoring and "resources" handling (eg. users, permissions, addresses, warehouses, notifications, settings, ...)
+          The rest of the applications revolves around mission monitoring and "resources" handling: users, permissions, addresses, warehouses, notifications, settings, ...
         </p>
 
         <img src="/img/portfolio/deliver.ee/pro3.png" class="project-screenshot">
@@ -101,8 +102,7 @@ frLink: /fr/projets/deliver.ee
         <hr>
 
         <p class="project-content">
-          Everything can be done through cockpit: complete management of every entity. The team can even order missions themselves if needed, with the same interface as the one in the Pro application.
-          The team can also manually dispatch missions to a specific carrier.
+          Everything can be done through cockpit: complete management of every entity. The team can follow and update missions, including manually dispatching missions to a specific carrier, and even order missions themselves for a business, with the same interface as the one in the Pro application.
         </p>
 
         <img src="/img/portfolio/deliver.ee/cockpit2.png" class="project-screenshot">
@@ -124,7 +124,7 @@ frLink: /fr/projets/deliver.ee
         <hr>
 
         <p class="project-content">
-          Cockpit and Pro have a lot of screens in common, with only minor variations, due to the design of the page, the permissions handling, and the need for internationalization that was not necessary (yet!) for the former. Therefore, I organized the projects so that everything that could be shared was. This was important to ensure that future updates would not require changes in two or three places.
+          Cockpit and Pro have a lot of screens in common with only minor variations due to the design of the page and the permissions handling. Therefore, I organized the projects so that all common elements were shared. This was important to ensure that future updates would not require changes in two or three places.
         </p>
 
         <div class="page-header">
@@ -132,20 +132,19 @@ frLink: /fr/projets/deliver.ee
         </div>
 
         <p class="project-content">
-          "Carrier" is the application used by the carriers to receive delivery orders, follow them, update them, and so on, and is optimized for handheld devices. While not as feature packed as the two others, this application has some very specific features.
-        </p>
-
-
-        <p class="project-content">
-          The carrier can see three lists of missions: the ones he is allowed to handle, the ones he is handling, and the ones he was specifically asked to handle. He can either accept or refuse those.
+          "Carrier" is the application used by the carriers to receive delivery, follower, and update missions. It is optimized for handheld devices, specifically smartphones. While not as packed as the two others, this application has some very specific features.
         </p>
 
         <p class="project-content">
-          Once he has accepted a mission, he has access to a map indicating him where he has to go to fetch the package(s). Whoever gives him the package is required to sign (on the phone screen) to validate the action. And the same goes on for the delivery: the client also has to sign.
+          The carriers can see three lists of missions: the ones they are allowed to handle, the ones they are handling, and the ones they were specifically asked to handle. They can either accept or refuse those.
         </p>
 
         <p class="project-content">
-          Each action updates the status of the mission, which can also be failed, refused, or rescheduled. And considering mistakes can happen pretty easily on touch devices, the carrier has 5 seconds to cancel an action after it was done.
+          Once they have accepted a mission, they have access to a map indicating him where he has to go to fetch the package(s). Whoever gives them the package is required to sign (on the phone screen) to validate the action. And the same goes on for the delivery: the client also has to sign.
+        </p>
+
+        <p class="project-content">
+          Each action updates the status of the mission, which can also be failed, refused, or rescheduled. And considering mistakes can happen pretty easily on touch devices, the carriers have 5 seconds to cancel an action after it was done.
         </p>
 
         <hr>
@@ -158,7 +157,7 @@ frLink: /fr/projets/deliver.ee
           <li>From: september 2014 to february 2015</li>
           <li>Languages/tools: ember.js, ember-cli, node.js, ruby on rails</li>
           <li>
-            Missions:
+            Some missions:
             <ul class="project-missions">
               <li>conversion of an ember app from ember-appkit to ember-cli</li>
               <li>code-sharing via an private ember-cli addon</li>
