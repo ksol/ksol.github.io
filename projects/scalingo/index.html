@@ -10,12 +10,95 @@ frLink: /fr/projets/scalingo
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
+        <div class="text-center page-header">
+          <img src="/img/portfolio/scalingo.png" />
+        </div>
       </div>
 
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center page-header">
-        <p class="lead">
-          <em>Coming soon...</em>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <p class="project-content">
+          <a href="https://scalingo.com">Scalingo</a> is a french hosting start-up. Their product is called a Platform-as-a-Service (PaaS): developers and companies don't have to manage or monitor the servers themselves, this work is done by the team at Scalingo. This way, users can focus on their applications on products.
         </p>
+
+        <p class="project-content">
+          The service is similar to <a href="http://heroku.com">Heroku</a> in how you use it, but the underlying technologies are not the same. Scalingo also uses european datacenters, making it legally safe for european companies to host their applications.
+        </p>
+
+        <p class="project-content">
+          I knew <a href="mailto:hello@scalingo.com">Yann</a> (CEO of Scalingo) and <a href="mailto:hello@scalingo.com">Leo</a> (CTO of Scalingo) from my time at Novelys, where I have worked with both of them. I knew they were using <a href="/freelancer/ember-js">Ember.js</a> for the <a href="http://my.scalingo.com">Scalingo dashboard</a> and that they could use some help to keep it up to date, so I started working with them at the beginning of April 2014.
+        </p>
+
+        <img src="/img/portfolio/scalingo/dashboard1.png" class="project-screenshot">
+        <div class="text-center">
+          <small>
+            <em>The login screen</em>
+          </small>
+        </div>
+
+        <hr>
+
+        <p class="project-content">
+          The dashboard was working correctly in itself, but it was starting to accumulate what is called "technical debt": the version of ember.js used was several months behind the latest stable one, and the community around ember.js had since come up with conventions and best practices that had not made their way into the dashboard yet. Both of those things were slowly starting to make it harder to maintain and upgrade the application, so my goal was to catch up on those fronts.
+        </p>
+
+        <p class="project-content">
+          First, I started laying down what needed to be done and the steps to get there as well as explaining why those steps were necessary. Slowly but surely, as the application was refactored, the code started looked cleaner and was more terse. Since I documented all my work and why I was doing it, Leo was able pretty quickly to get on board with the refactoring himself.
+        </p>
+
+        <img src="/img/portfolio/scalingo/dashboard2.png" class="project-screenshot">
+        <div class="text-center">
+          <small>
+            <em>The container management interface</em>
+          </small>
+        </div>
+
+        <hr>
+
+        <p class="project-content">
+          After a while, the refactoring was completed and the dashboard was running on the latest version of Ember with no issue. Some bugs were found and fixed in the process, including the authentication system that had some troubles.
+        </p>
+
+        <p class="project-content">
+          The next step consisted in migrating the application (made with <a href="/freelancer/ruby-on-rails">) to <a href="http://ember-cli.com">ember-cli</a>, which had become the official way of making ember.js projects. While this does not directly affect how the users are using the dashboard, this part is critical: using ember-cli allows developpers to benefit from third-party libraries as well as receiving ember.js updates quicker. And since it imposes a common structure to all ember.js projects, when a new developper joins scalingo he will be up and running in no time.
+        </p>
+
+        <img src="/img/portfolio/scalingo/dashboard3.png" class="project-screenshot">
+        <div class="text-center">
+          <small>
+            <em>The profile page</em>
+          </small>
+        </div>
+
+        <hr>
+
+        <p class="project-content">
+          Once again, I started with a list of steps that needed to be done to perform the migration. This work is actually ongoing but should be finished soon.
+        </p>
+
+        <hr>
+
+        <p class="project-content">
+          Before my work was completed, the application was already easier to work with: Leo was able to develop a new feature pretty quickly while I was finishing the refactoring, and did so in a future-proof way too. In the end, the work done here laid stable foundations for the foreseeable future.
+        </p>
+
+        <hr>
+        <a href="/contact" class="btn btn-primary btn-lg btn-block">
+          <i class="fa fa-envelope"></i>
+          Besoin d'aide sur un projet Ember.js ?
+        </a>
+
+        <ul class="project-summary">
+          <li>De: april à may 2015</li>
+          <li>Langages/outils: ember.js, ember-cli, node.js, ruby on rails</li>
+          <li>
+            Quelques missions:
+            <ul class="project-missions">
+              <li>Conversion d'une application ember de ember-rails à ember-cli</li>
+              <li>Refactoring/maintenabilité d'une application</li>
+              <li>Transmission des connaissances/mentoring de l'équipe</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
