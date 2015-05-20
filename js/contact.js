@@ -23,8 +23,7 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
-                    message: message,
-                    _next: window.location
+                    message: message
                 },
                 dataType: "json",
                 cache: false,
