@@ -292,3 +292,13 @@ li.footer-menu-divider-smaller {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+
+.btn-lets-talk {
+  border-radius: 0px;
+  width: 300px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition-duration: 0.6s;
+}
