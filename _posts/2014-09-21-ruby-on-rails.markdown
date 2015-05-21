@@ -6,8 +6,16 @@ imgAltFrench: Logo Ruby on Rails
 category: Services
 title: Ruby on Rails expert
 titleFrench: Expert Ruby on Rails
-contactText: Contact me about Ruby on Rails
-contactTextFrench: Me contacter à propos de Ruby on Rails
+contactText: |
+  Contact me
+  <span class="hidden-xs">about</span>
+  <span class="visible-xs-inline">for</span>
+  Ruby on Rails
+contactTextFrench: |
+  Me contacter
+  <span class="hidden-xs">à propos de</span>
+  <span class="visible-xs-inline">cf.</span>
+  Ruby on Rails
 sitemap: false
 linkName: ruby-on-rails
 description: |

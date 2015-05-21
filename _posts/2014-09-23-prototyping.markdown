@@ -7,7 +7,11 @@ category: Services
 title: Prototyping
 titleFrench: Prototypage
 contactText: Contact me about prototyping
-contactTextFrench: Me contacter à propos du prototypage
+contactTextFrench:
+  Me contacter
+  <span class="hidden-xs">à propos du</span>
+  <span class="visible-xs-inline">cf.</span>
+  prototypage
 sitemap: false
 
 description: |
