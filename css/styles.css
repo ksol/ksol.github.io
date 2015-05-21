@@ -129,6 +129,25 @@ h6 {
 
 .content-section-c a {
   color: #9CA1B0;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.6s;
+}
+
+.content-section-c a:hover {
+  color: #556062;
+}
+
+a {
+  color: #679DCB;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.6s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #386E9B;
 }
 
 .section-heading {
