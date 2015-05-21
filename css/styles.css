@@ -269,6 +269,10 @@ p.copyright {
   background-image: url(/img/flags/1x1/gb.svg);
 }
 
+.language-label {
+  margin-left: 6px;
+}
+
 li.footer-menu-divider-smaller {
   padding: 0;
 }
