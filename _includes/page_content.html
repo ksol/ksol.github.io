@@ -25,6 +25,36 @@
   </div>
 </div>
 
+<div class="content-section-c">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2>Recent projects</h2>
+      </div>
+
+      <div class="col-xs-12 col-sm-6">
+        <img src="/img/portfolio/deliver.ee/front.png" class="project-img">
+        <p class="project-content project-short">
+          I helped <a href="http://deliver.ee">deliver.ee</a> finish on time a few of their web applications - made with <a href="/freelancer/ember-js">Ember.js</a> and <a href="/freelancer/ruby-on-rails">Ruby on Rails</a>.
+        </p>
+
+        <a href="/projects/deliver.ee">Read more about it</a>
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-sm-6">
+        <img src="/img/portfolio/scalingo/front.png" class="project-img">
+        <p class="project-content project-short">
+          I worked with <a href="http://scalingo.com">Scalingo</a> and helped them ensuring their dashboard - made with <a href="/freelancer/ember-js">Ember.js</a> - was up to date and future-proof.
+        </p>
+
+        <a href="/projects/scalingo">Read more about it</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% for post in site.posts reversed %}
   {% if post.category == 'Services' %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
