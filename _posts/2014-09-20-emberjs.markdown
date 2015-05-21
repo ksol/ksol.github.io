@@ -4,7 +4,7 @@ img: emberjs.png
 imgAlt: Ember.js logo
 imgAltFrench: Logo Ember.js
 category: Services
-title: Ember.js developper
+title: Ember.js developer
 titleFrench: Développeur Ember.js
 contactText: Contact me about Ember.js
 contactTextFrench: Me contacter à propos d'Ember.js
