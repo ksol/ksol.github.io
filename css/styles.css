@@ -354,3 +354,8 @@ blockquote p {
 blockquote p:first-child {
   display: inline
 }
+
+.btn {
+  transition-property: background-color;
+  transition-duration: 0.6s;
+}
