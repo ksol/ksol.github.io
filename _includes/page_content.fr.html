@@ -38,6 +38,89 @@
   </div>
 </div>
 
+<div class="content-section-b">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <img class="img-responsive" src="/img/services/rails-logo.png" alt="Ruby on Rails logo" title="Ruby / Rails">
+          </div>
+        </div>
+        <br>
+        <p class="lead text-justify">
+          Je travaille avec Ruby and Rails depuis 2012. Que vous commenciez un nouveau projet
+          ou cherchiez de l'aide pour maintenir une application déjà existance, je peux aider!
+        </p>
+        <p class="lead text-justify">
+          Bien que je me concentre principalement sur des problématiques backend, j'ai également de
+          l'expérience en développement frontend, javascript moderne et quelques-uns des frameworks populaires.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-section-a">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 text-center">
+        <h3 class="section-heading">
+          Prototypage
+        </h3>
+        <p class="lead text-justify">
+          Besoin d'explorer une ou plusieurs idées avant de pleinement vous engager?
+          Des hypothèses à confirmer ou invalider?
+          Un prototype peut être un bon outil pour guider votre décision.
+        </p>
+        <p class="lead text-justify">
+          Nous définirons quelles questions ont besoin de réponses, et ensuite établiront
+          la manière la plus appropriée d'y répondre, jusqu'à ce que vous ayez toutes les clés en main
+          pour faire un choix éclairé.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-sm-4 text-center">
+        <h3 class="section-heading">
+          Dette technique
+        </h3>
+        <p class="lead text-justify">
+          Les technologies informatiques évoluent <em>rapidement</em>, et il est très simple de se retrouver avec une application
+          qui n'est plus à jour. Cela peut mener à des pertes de performances, des risques de sécurité accrus,
+          et une baisse de productivité pour vos équipes.
+        </p>
+        <p class="lead text-justify">
+          Je peux m'occuper des questions de mises à jour applicatives et migration de données
+          pendant que vos équipes se concentrent sur les fonctionnalités que vos utilisateurs finaux utilisent.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-sm-4 text-center">
+        <h3 class="section-heading">
+          Outils de développement
+        </h3>
+        <p class="lead text-justify">
+          Un sujet trop souvent survolé, une suite d'outils efficace permet d'améliorer
+          la capacité de vos équipes à fournir du travail du qualité et la fréquence à laquelle
+          elles le font.
+          En plus de cela, l'automatisation peut aider à garder votre application à jour et sécurisée.
+        </p>
+        <p class="lead text-justify">
+          D'outils en ligne de commande créés sur mesure à la mise en place
+          <a href="https://fr.wikipedia.org/wiki/Int%C3%A9gration_continue">d'intégration continue</a>,
+          je peux améliorer votre worklow de plusieurs manières.
+        </p>
+      </div>
+
+      <div class="col-xs-12 text-center">
+        <a href="/contact" class="btn btn-primary btn-lg btn-lets-talk">
+          Parlons-en
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="content-section-c">
   <div class="container">
     <div class="row">
@@ -132,77 +215,3 @@
     </div>
   </div>
 </div>
-
-{% for post in site.posts reversed %}
-  {% if post.category == 'Services' %}
-    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-
-    <div class="content-section-{% if thecycle == 'odd' %}b{% else %}a{% endif %}">
-      <div class="container">
-        {% if post.hasTwoParts %}
-          <div class="row">
-            <div class="col-xs-12 col-md-5">
-              <div class="clearfix"></div>
-              <h2 class="section-heading">
-                {{ post.titleLeftFrench }}
-              </h2>
-              <p class="lead">
-                {{ post.contentLeftFrench }}
-              </p>
-            </div>
-            <div class="col-xs-12 col-md-5 col-md-offset-2">
-              <div class="clearfix"></div>
-              <h2 class="section-heading text-right">
-                {{ post.titleRightFrench }}
-              </h2>
-              <p class="lead pull-right">
-                {{ post.contentRightFrench }}
-              </p>
-            </div>
-          </div>
-        {% else %}
-          <div class="row">
-            {% if thecycle == 'odd' %}
-              <div class="col-lg-5 col-sm-6">
-            {% else %}
-              <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
-            {% endif %}
-              <div class="clearfix"></div>
-              <h2 class="section-heading">
-                {% if post.linkName %}
-                  <a href="/fr/freelancer/{{post.linkName}}" title="{{post.titleFrench}}">
-                    {{ post.titleFrench }}
-                  </a>
-                {% else %}
-                  {{ post.titleFrench }}
-                {% endif %}
-              </h2>
-              <p class="lead">
-                {{ post.descriptionFrench }}
-
-                {% if post.linkName %}
-                  <a href="/fr/freelancer/{{post.linkName}}" title="{{post.titleFrench}}">
-                    Read more...
-                  </a>
-                {% endif %}
-              </p>
-
-              <a href="/fr/contact" class="btn btn-primary btn-lg">
-                <i class="fa fa-envelope"></i>
-                {{ post.contactTextFrench }}
-              </a>
-            </div>
-
-            {% if thecycle == 'odd' %}
-              <div class="col-lg-5 col-lg-offset-2 col-sm-6 hidden-xs">
-            {% else %}
-              <div class="col-lg-5 col-sm-pull-6 col-sm-6 hidden-xs">
-            {% endif %}
-              <img class="img-responsive img-service {% if thecycle == 'odd' %}img-right{% endif %}" src="/img/services/{{ post.img }}" alt="{{post.imgAltFrench}}" title="{{post.titleFrench}}">
-            </div>
-          </div>
-        {% endif %}
-      </div> <!-- /.container -->
-    </div><!-- /.content-section-a -->
-  {% endif %}
-{% endfor %}
